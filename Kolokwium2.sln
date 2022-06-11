@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kolokwium2", "Kolokwium2\Kolokwium2.vcxproj", "{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Debug|x64.ActiveCfg = Debug|x64
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Debug|x64.Build.0 = Debug|x64
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Debug|x86.Build.0 = Debug|Win32
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Release|x64.ActiveCfg = Release|x64
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Release|x64.Build.0 = Release|x64
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Release|x86.ActiveCfg = Release|Win32
+		{2B97CFAC-CD15-41EB-91F7-752F2FCE4D39}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFA1E898-67DF-4656-9AD6-10417201FABA}
+	EndGlobalSection
+EndGlobal
