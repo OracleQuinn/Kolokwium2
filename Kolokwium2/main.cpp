@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <iomanip> 
 
 using namespace std;
 
@@ -82,7 +83,24 @@ double przepisz(const char* nPlWe, int wiek) {
     return result;
 }
 
+//ZADANIE 2:
+/*
+Zaimplementowaæ funkcjê funkcjê int fif(char* pl, char* slowo, char* &wsk), która
+przyjmuje jako parametry dwa ³añcuchy znaków ( pl oraz slowo) i wskaŸnik (wsk). W funkcji powinno
+nast¹piæ odczytanie pliku (jego nazwa przekazana jest przez parametr pl) oraz znalezienie pozycji s³owa
+(parametr slowo) w tym pliku. Jeœli s³owo nie zosta³o znalezione, to nale¿y zwróciæ wartoœæ -1. Ponadto przez
+parametr wsk nale¿y zwróciæ wskaŸnik na najd³u¿sze s³owo, jakie wystêpuje w pliku. Nie ma to byæ wskaŸnik do
+pliku, ale do zmiennej – nowej zmiennej stworzonej dynamicznie w funkcji.
+*/
+
+int fif(char* pl, char* slowo, char*& wsk) {
+    int result = 0;
+
+    return result;
+}
+
 int main() {
+    cout << setprecision(4);
     double result = przepisz("test.txt", 30);
 
     cout << result << endl;
