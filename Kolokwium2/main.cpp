@@ -113,11 +113,12 @@ int fif(const char* pl, const char* slowo, char*& wsk) {
         }
         if (word.length() > lengthOfWord) {
             *wskWord = (char)word.c_str();
-            wsk = wskWord;
         }
     }
 
     file.close();
+
+    wsk = (char*)&wskWord;
 
     return result;
 }
@@ -133,5 +134,5 @@ int main() {
     char* wsk = new char;
     int result2 = fif("test.txt", "Polak", wsk);
     cout << result2 << endl;
-    cout << "Adres wskaznika po przekazaniu do funkcji: " << *wsk << endl;
+    cout << "Adres wskaznika po przekazaniu do funkcji: " << wsk << endl;
 }
