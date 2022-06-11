@@ -93,15 +93,45 @@ parametr wsk nale¿y zwróciæ wskaŸnik na najd³u¿sze s³owo, jakie wystêpuje w plik
 pliku, ale do zmiennej – nowej zmiennej stworzonej dynamicznie w funkcji.
 */
 
-int fif(char* pl, char* slowo, char*& wsk) {
-    int result = 0;
+int fif(const char* pl, const char* slowo, char*& wsk) {
+    int result = -1;
+
+    ifstream file;
+    file.open(pl);
+
+    string word;
+    int lengthOfWord = 0;
+
+    char* wskWord = new char;
+
+    while (file >> word) {
+        if (word == slowo) {
+            //liczê od 0
+            int position = file.tellg();
+            cout << "Slowo znajduje sie na pozycji: " << position + 1 << endl;
+            result = 0;
+        }
+        if (word.length() > lengthOfWord) {
+            *wskWord = (char)word.c_str();
+            wsk = wskWord;
+        }
+    }
+
+    file.close();
 
     return result;
 }
 
 int main() {
+    cout << "*** ZADANIE 1: ***" << endl;
     cout << setprecision(4);
     double result = przepisz("test.txt", 30);
 
     cout << result << endl;
+
+    cout << "*** ZADANIE 2: ***" << endl;
+    char* wsk = new char;
+    int result2 = fif("test.txt", "Polak", wsk);
+    cout << result2 << endl;
+    cout << "Adres wskaznika po przekazaniu do funkcji: " << *wsk << endl;
 }
